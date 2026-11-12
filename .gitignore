@@ -1,0 +1,21 @@
+# pixi environments
+.pixi/*
+!.pixi/config.toml
+
+# python caches / build
+__pycache__/
+*.pyc
+.pytest_cache/
+*.egg-info/
+build/
+dist/
+
+# generated outputs
+results*/
+kforce_logs/
+*.kforce.support.bam
+*.kforce.support.bam.bai
+
+# macOS junk
+.DS_Store
+**/.DS_Store

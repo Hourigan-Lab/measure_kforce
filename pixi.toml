@@ -1,0 +1,21 @@
+[workspace]
+channels = ["conda-forge", "bioconda"]
+name = "kforce"
+platforms = ["linux-64"]
+version = "0.2.0"
+
+[tasks]
+test = "pytest -q"
+
+[activation.env]
+PYTHON_GIL = "0"
+
+[dependencies]
+python = ">=3.10"
+pysam = ">=0.24.0,<0.25"
+openpyxl = ">=3.1.5,<4"
+pandas = ">=3.0.3,<4"
+numpy = ">=2.4.6,<3"
+pytest = ">=9.0.3,<10"
+samtools = ">=1.23.1,<2"
+matplotlib = ">=3.10.9,<4"
